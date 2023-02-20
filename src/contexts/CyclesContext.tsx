@@ -76,6 +76,7 @@ export function CyclesContextProvider({
 
   function markCurrentCycleAsFinished() {
     dispatch(markCurrentCycleAsFinishedAction())
+    document.title = 'Ignite Timer'
   }
 
   function setSecondsPassed(seconds: number) {
@@ -99,6 +100,7 @@ export function CyclesContextProvider({
 
   function interruptCurrentCycle() {
     dispatch(interruptCurrentCycleAction())
+    document.title = 'Ignite Timer'
   }
 
   return (
